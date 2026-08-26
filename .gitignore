@@ -1,0 +1,31 @@
+# Android Studio and local SDK configuration
+.idea/
+*.iml
+local.properties
+
+# Gradle and Kotlin caches
+.gradle/
+.gradle-home/
+.kotlin/
+build/
+**/build/
+
+# Native build outputs
+.cxx/
+**/.cxx/
+*.so.dbg
+
+# Signing keys and local secrets
+*.jks
+*.keystore
+keystore.properties
+secrets.properties
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.swp
+
+# Local cleanup backup, not part of the application source
+_obsolete_backup/
+
