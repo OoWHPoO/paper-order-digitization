@@ -11,6 +11,12 @@ android { namespace = "com.jiafang.order"; compileSdk = 35
         ndk { abiFilters += listOf("arm64-v8a") }
     }
     buildFeatures { compose = true }
+    lint {
+        // The current lifecycle lint detector is incompatible with Kotlin 2.0's UAST analysis.
+        disable += "NullSafeMutableLiveData"
+        // Release lint crashes in the bundled detector before reporting any app issue.
+        checkReleaseBuilds = false
+    }
     compileOptions { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }
     kotlinOptions { jvmTarget = "17" }
 }
