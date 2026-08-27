@@ -5,14 +5,15 @@
 ## 功能
 
 - 拍摄纸质账本并批量创建订单
-  <img width="82" height="191" alt="订单" src="https://github.com/user-attachments/assets/6b5f34ee-db43-4d81-832f-e14882ea23d5" />
-  <img width="823" height="1920" alt="主页面" src="https://github.com/user-attachments/assets/ab1e1978-8cfe-4046-8e22-f6f558444bc5" />
-  <img width="823" height="1920" alt="订单输入" src="https://github.com/user-attachments/assets/c55c4373-39e0-4e4d-a179-c9ee707a9749" />
-- 按单号实时搜索
+- 
+<img width="160" height="373" alt="订单输入" src="https://github.com/user-attachments/assets/0d799feb-118b-4499-973d-bdaa5ea58132" />
+<img width="160" height="373" alt="主页面" src="https://github.com/user-attachments/assets/891f4345-831f-4723-8bdd-6cf1ced03394" />
 - 待取货、已取货订单分组管理
-  <img width="823" height="1920" alt="订单" src="https://github.com/user-attachments/assets/a019f51a-86ec-4a2d-aae1-c36c1b5c30a0" />
+- 
+  <img width="160" height="373" alt="订单" src="https://github.com/user-attachments/assets/ca34b0d6-13ac-4752-9369-84e507003af3" />
 - 待取货订单备注及附加图片
-  <img width="823" height="1920" alt="订单详情" src="https://github.com/user-attachments/assets/1f5124f8-229b-4e06-917f-1bea9ad7de67" />
+- 
+  <img width="160" height="373" alt="订单" src="https://github.com/user-attachments/assets/e064d54e-2f8c-45d5-8803-9c1f261b2dda" />
 - 标记取货时自动清理订单图片
 - 已取货超过 15 天后自动清理完整记录
 - 字体大小调节并在本地保存
