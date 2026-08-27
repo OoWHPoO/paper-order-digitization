@@ -29,3 +29,5 @@ Thumbs.db
 # Local cleanup backup, not part of the application source
 _obsolete_backup/
 
+
+app/release/
