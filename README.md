@@ -5,6 +5,7 @@
 ## 功能
 
 - 拍摄纸质账本并批量创建订单
+  <img width="82" height="191" alt="订单" src="https://github.com/user-attachments/assets/6b5f34ee-db43-4d81-832f-e14882ea23d5" />
   <img width="823" height="1920" alt="主页面" src="https://github.com/user-attachments/assets/ab1e1978-8cfe-4046-8e22-f6f558444bc5" />
   <img width="823" height="1920" alt="订单输入" src="https://github.com/user-attachments/assets/c55c4373-39e0-4e4d-a179-c9ee707a9749" />
 - 按单号实时搜索
