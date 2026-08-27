@@ -7,7 +7,7 @@ plugins {
 
 android { namespace = "com.jiafang.order"; compileSdk = 35
     defaultConfig {
-        applicationId = "com.jiafang.order"; minSdk = 26; targetSdk = 35; versionCode = 1; versionName = "1.0"
+        applicationId = "com.jiafang.order"; minSdk = 26; targetSdk = 35; versionCode = 2; versionName = "1.0.1"
         ndk { abiFilters += listOf("arm64-v8a") }
     }
     buildFeatures { compose = true }

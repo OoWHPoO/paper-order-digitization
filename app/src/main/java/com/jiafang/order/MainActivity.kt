@@ -32,6 +32,7 @@ import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.FocusRequester
@@ -92,7 +93,7 @@ class VmFactory(private val db:AppDb):ViewModelProvider.Factory {
         throw IllegalArgumentException("Unknown ViewModel: ${modelClass.name}")
     }
 }
-private val dateFmt=SimpleDateFormat("yyyy-MM-dd HH:mm:ss",Locale.getDefault())
+private val dateFmt=SimpleDateFormat("MM-dd HH:mm",Locale.getDefault())
 private fun newPhotoFile(c:Context,p:String)=File(File(c.filesDir,"orders").apply{mkdirs()},"${p}_${System.currentTimeMillis()}.jpg")
 private fun saveBitmap(b:Bitmap,f:File){FileOutputStream(f).use{b.compress(Bitmap.CompressFormat.JPEG,92,it)}}
 
@@ -268,7 +269,10 @@ fun ScanPage(
     cameraDenied: Boolean,
     onRequestPermission: () -> Unit
 ) {
-    Column(Modifier.fillMaxSize().padding(horizontal = 22.dp, vertical = 24.dp), horizontalAlignment = Alignment.CenterHorizontally) {
+    val configuration = LocalConfiguration.current
+    val horizontalPadding = (configuration.screenWidthDp.dp * 0.055f).coerceIn(16.dp, 28.dp)
+    val cameraHeight = (configuration.screenHeightDp.dp * 0.30f).coerceIn(220.dp, 340.dp)
+    Column(Modifier.fillMaxSize().padding(horizontal = horizontalPadding, vertical = 20.dp), horizontalAlignment = Alignment.CenterHorizontally) {
         StaggeredAppear(0) {
             Column(Modifier.fillMaxWidth()) {
                 Text("账本提取器", style = MaterialTheme.typography.headlineLarge)
@@ -294,7 +298,7 @@ fun ScanPage(
         Spacer(Modifier.height(if (cameraDenied) 18.dp else 34.dp))
         StaggeredAppear(2) {
             PressScaleBox(
-                Modifier.fillMaxWidth().height(300.dp)
+                Modifier.fillMaxWidth().height(cameraHeight)
                     .background(GlassSurfaceStrong, GlassShape)
                     .border(1.dp, GlassBorder, GlassShape),
                 onClick = onRequestPermission
