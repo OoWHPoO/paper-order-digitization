@@ -10,8 +10,8 @@
 - 标记取货时自动清理订单图片
 - 已取货超过 15 天后自动清理完整记录
 - 字体大小调节并在本地保存
-<img width="160" height="373" alt="订单输入" src="https://github.com/user-attachments/assets/0d799feb-118b-4499-973d-bdaa5ea58132" />
 <img width="160" height="373" alt="主页面" src="https://github.com/user-attachments/assets/891f4345-831f-4723-8bdd-6cf1ced03394" />
+<img width="160" height="373" alt="订单输入" src="https://github.com/user-attachments/assets/0d799feb-118b-4499-973d-bdaa5ea58132" />
 <img width="160" height="373" alt="订单" src="https://github.com/user-attachments/assets/ca34b0d6-13ac-4752-9369-84e507003af3" />
 <img width="160" height="373" alt="订单详情" src="https://github.com/user-attachments/assets/1d32a66d-7f51-4765-a8a5-956178dc3870" />
 
